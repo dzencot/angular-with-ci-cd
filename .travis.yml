@@ -14,8 +14,8 @@ before_script:
   - npm install -g @angular/cli
 
 script:
-  - yarn all_tests #Uses yarn to run our custom script all_tests
-  - yarn build --prod --base-href $base_href
+  - npm run-script all_tests
+  - npm build
 
 deploy:
   provider: pages
